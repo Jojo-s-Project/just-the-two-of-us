@@ -45,6 +45,7 @@ body {
     -webkit-backgroud-size: cover;
     -moz-backgroud-size: cover;
     -o-backgroud-size: cover;
+    border: solid 2px red;
 }
 
 .container {
