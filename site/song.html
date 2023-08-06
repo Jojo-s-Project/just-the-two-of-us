@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <link rel="stylesheet" href="css/style-song.css">
     <link rel="stylesheet" href="css/music-player.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
@@ -12,61 +13,64 @@
 
     <title>Just The Two Of Us</title>
 </head>
+
 <body>
     <div class="container">
         <div class="header">
             <h1>JUST THE TWO OF US</h1>
             <p>Uma coletânea de músicas muito específicas para acompanhar dois protagonistas em sua jornada juntos.</p>
         </div>
-        <p class="back">< Voltar</p>
-    </div>
-    <div class="content">
-        <div class="part1">
-            
-        </div>
-        <div class="part2">
-            
-        </div>
-    </div>
-
-    <!-- begin music player *ajustar depois* -->
-    <div class="music-player">
-        <div class="wrapper">
-            <div class="top-bar">
-                <i class="material-icons">expand_more</i>
-                <span>Now Playing</span>
-                <i class="material-icons">more_horiz</i>
-            </div>
-            <div class="img-area">
-                <img src="" alt="">
-            </div>
-            <div class="song-details">
-                <p class="name"></p>
-                <p class="artist"></p>
-            </div>
-            <div class="progress-area">
-                <div class="progress-bar"></div>
-                <div class="timer">
-                    <span class="current">0:00</span>
-                    <span class="duration"></span>
+        <p class="back">
+            < Voltar</p>
+            <div class="content">
+                <div class="part1">
+                    <!-- begin music player *ajustar depois* -->
+                    <div class="music-player">
+                        <div class="wrapper">
+                            <div class="top-bar">
+                                <i class="material-icons">expand_more</i>
+                                <span>Now Playing</span>
+                                <i class="material-icons">more_horiz</i>
+                            </div>
+                            <div class="img-area">
+                                <img src="" alt="">
+                            </div>
+                            <div class="song-details">
+                                <p class="name"></p>
+                                <p class="artist"></p>
+                            </div>
+                            <div class="progress-area">
+                                <div class="progress-bar"></div>
+                                <div class="timer">
+                                    <span class="current">0:00</span>
+                                    <span class="duration"></span>
+                                </div>
+                                <audio id="main-audio"
+                                    src="archives/songs/ato1/01. Intro 1 - Nagi No Asukara - Uroko Sama no Monogatari.mp3"></audio>
+                            </div>
+                            <div class="controls">
+                                <!-- <i id="repeat-plist" class="material-icons">repeat_one</i> -->
+                                <i id="prev" class="material-icons">skip_previous</i>
+                                <div class="play-pause">
+                                    <i class="material-icons">play_arrow</i>
+                                </div>
+                                <i id="next" class="material-icons">skip_next</i>
+                                <!-- <i id="more-music" class="material-icons">queue_music</i> -->
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <audio id="main-audio" src="archives/songs/ato1/01. Intro 1 - Nagi No Asukara - Uroko Sama no Monogatari.mp3"></audio>
-            </div>
-            <div class="controls">
-                <!-- <i id="repeat-plist" class="material-icons">repeat_one</i> -->
-                <i id="prev" class="material-icons">skip_previous</i>
-                <div class="play-pause">
-                    <i class="material-icons">play_arrow</i>
+                <div class="part2">
+        
                 </div>
-                <i id="next" class="material-icons">skip_next</i>
-                <!-- <i id="more-music" class="material-icons">queue_music</i> -->
             </div>
-        </div>
     </div>
+    
 
     <!-- end music player -->
     <script src="js/js-song-list.js"></script>
     <script src="js/js-song.js"></script>
 
 </body>
+
 </html>
