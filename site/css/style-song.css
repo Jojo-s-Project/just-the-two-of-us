@@ -45,7 +45,6 @@ body {
     -webkit-backgroud-size: cover;
     -moz-backgroud-size: cover;
     -o-backgroud-size: cover;
-    border: solid 2px red;
 }
 
 .container {
@@ -98,4 +97,19 @@ body {
 .back:hover {
     cursor: pointer;
     color: #8b1436;
+}
+
+.content {
+    /* border: solid 2px black; */
+    display: flex;
+    width: 100%;
+}
+
+.part1 {
+    /* border: solid 2px blue; */
+}
+
+.part2 {
+    /* border: solid 2px red; */
+    width: 100%;
 }

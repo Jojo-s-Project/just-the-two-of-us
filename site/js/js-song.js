@@ -1,5 +1,5 @@
 const wrapper = document.querySelector(".music-player .wrapper"),
-    musicImg = wrapper.querySelector(".img-are img"),
+    musicImg = wrapper.querySelector(".img-area img"),
     musicName = wrapper.querySelector(".song-details .name"),
     musicArtist = wrapper.querySelector(".song-details .artist"),
     mainAudio = wrapper.querySelector("#main-audio"),
@@ -18,7 +18,7 @@ window.addEventListener("load", () => {
 function loadMusic(index) {
     musicName.innerText = `${songList[index].name}`;
     musicArtist.innerText = `${songList[index].artist}`;
-    // musicImg.src = ``;
+    musicImg.src = `../archives/images/${index + 1}.png`;
     mainAudio.src = `../archives/songs/${songList[index].src}.mp3`; //`images/${musics[index].img}.jpg`
 }
 
