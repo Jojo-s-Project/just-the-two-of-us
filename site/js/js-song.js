@@ -57,25 +57,25 @@ mainAudio.addEventListener("timeupdate", (e) => {
     
     
     // mainAudio.addEventListener("loadeddata", () => {
-        // let musicCurrentTime = wrapper.querySelector(".current"),
-        // musicDuration = wrapper.querySelector(".duration");
+        let musicCurrentTime = wrapper.querySelector(".current"),
+        musicDuration = wrapper.querySelector(".duration");
 
-        // // atualizando tempo total da música
-        // let audioDuration = mainAudio.duration;
-        // let totalMin = Math.floor(audioDuration / 60);
-        // let totalSec = Math.floor(audioDuration % 60);
-        // if (totalSec < 10) {
-        //     totalSec = `0${totalSec}`;
-        // }
-        // musicDuration.innerText = `${totalMin}:${totalSec}`;
+        // atualizando tempo total da música
+        let audioDuration = mainAudio.duration;
+        let totalMin = Math.floor(audioDuration / 60);
+        let totalSec = Math.floor(audioDuration % 60);
+        if (totalSec < 10) {
+            totalSec = `0${totalSec}`;
+        }
+        musicDuration.innerText = `${totalMin}:${totalSec}`;
 
-        // // atualizando o tempo atual da música
-        // let currentMin = Math.floor(currentTime / 60);
-        // let currentSec = Math.floor(currentTime % 60);
-        // if (currentSec < 10) {
-        //     currentSec = `0${currentSec}`;
-        // }
-        // musicCurrentTime.innerText = `${currentMin}:${currentSec}`;
+        // atualizando o tempo atual da música
+        let currentMin = Math.floor(currentTime / 60);
+        let currentSec = Math.floor(currentTime % 60);
+        if (currentSec < 10) {
+            currentSec = `0${currentSec}`;
+        }
+        musicCurrentTime.innerText = `${currentMin}:${currentSec}`;
     // });
 })
 
