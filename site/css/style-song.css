@@ -112,4 +112,39 @@ body {
 .part2 {
     /* border: solid 2px red; */
     width: 100%;
+    margin: 0 10px;
+}
+
+.textContent {
+    overflow-y: hidden;
+    /* border: solid 4px black; */
+    max-height: 750px;
+    padding-top: 25px;
+    font-family: 'Letters for Learners';
+    font-size: 30px;
+    text-indent: 40px;
+    font-weight: 100;
+}
+
+.lyricsContent {
+    overflow-y: hidden;
+    /* border: solid 4px black; */
+    max-height: 750px;
+    font-family: 'Letters for Learners';
+    font-size: 30px;
+}
+
+.lyricsCentered {
+    margin-top: 19px;
+    text-align: center;
+    font-family: inherit;
+}
+
+.possui-comentario {
+    color: #8b1436;
+    transition: ease-in-out 0.2s;
+}
+
+.possui-comentario:hover {
+    cursor: pointer;
 }
