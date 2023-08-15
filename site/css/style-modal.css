@@ -1,0 +1,66 @@
+.janela-modal {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+}
+
+.modal {
+    width: 40%;
+    min-width: 450px;
+    /* min-height: 200px; */
+    max-height: 750px;
+    background-color: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(10px);
+    padding: 30px;
+    border-radius: 20px;
+    font-family: 'Letters for Learners';
+    font-size: 30px;
+    text-indent: 40px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.fechar {
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.0);
+    backdrop-filter: blur(10px);
+    top: -2px;
+    right: 5px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    /* border: 0; */
+    /* background-color: red; */
+    color: #000;
+    font-size: 20px;
+}
+
+.fechar:hover {
+    cursor: pointer;
+}
+
+.janela-modal.abrir {
+    display: flex;
+}
+
+@keyframes abrirmodal {
+    from {
+        opacity: 0;
+        transform: translate3d(0, -20px, -25px);
+    }
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+.abrir .modal {
+    animation: abrirmodal 0.5s;
+}

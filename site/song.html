@@ -8,19 +8,20 @@
 
     <link rel="stylesheet" href="css/style-song.css">
     <link rel="stylesheet" href="css/style-music-player.css">
+    <link rel="stylesheet" href="css/style-modal.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="icon" type="image/x-icon" href="css/assets/icons8-música.svg">
 
     <title>Just The Two Of Us</title>
 </head>
 
-<body>
+<body style="background-image: url(css/assets/Playlist\ a2.png)">
     <div class="container">
         <div class="header">
             <h1>JUST THE TWO OF US</h1>
             <p>Uma coletânea de músicas muito específicas para acompanhar dois protagonistas em sua jornada juntos.</p>
         </div>
-        <p class="back">< Voltar</p>
+        <p class="back" onclick="handleGoBack()">< Voltar</p>
         <div class="content">
             <div class="part1">
                 <!-- begin music player *ajustar depois* -->
@@ -61,14 +62,19 @@
             <div class="part2">
             </div>
         </div>
+        <div id="janela-modal" class="janela-modal">
+            <div class="modal" id="modal">
+                <!-- <button class="fechar" id="fechar">X</button> -->
+            </div>
+        </div>
     </div>
+    
 
-    <div id="modal-comentario">
-        
-    </div>
 
     <!-- end music player -->
+    <script src="js/js-song-contents.js"></script>
     <script src="js/js-song-list.js"></script>
+    <script src="js/js-index.js"></script>
     <script src="js/js-song.js"></script>
 
 </body>

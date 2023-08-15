@@ -32,12 +32,14 @@ body::-webkit-scrollbar-thumb {
 
 body {
     /* banner */
+    /* border: solid 2px red; */
+    height: 100%;
     width: 100%;
-    display: flex;
+    /* display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
     scrollbar-width: thin;
-    background-image: url(assets/Playlist\ a2.png);
+    /* background-image: url(assets/Playlist\ a2.png); */
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
@@ -53,6 +55,7 @@ body {
     flex-direction: column;
     align-items: center;
     /* border: solid 2px green; */
+    margin: 0 auto;
     margin-top: 20px;
 }
 
@@ -111,12 +114,13 @@ body {
 
 .part2 {
     /* border: solid 2px red; */
+    height: 100%;
     width: 100%;
     margin: 0 10px;
 }
 
 .textContent {
-    overflow-y: hidden;
+    overflow-y: scroll;
     /* border: solid 4px black; */
     max-height: 750px;
     padding-top: 25px;
@@ -127,7 +131,7 @@ body {
 }
 
 .lyricsContent {
-    overflow-y: hidden;
+    overflow-y: scroll;
     /* border: solid 4px black; */
     max-height: 750px;
     font-family: 'Letters for Learners';
